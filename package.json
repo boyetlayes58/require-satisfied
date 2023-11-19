@@ -1,6 +1,6 @@
 {
   "name": "require-satisfied",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search for \"REQUIRE\" in comments and report if no matching \"SATISFIED\" found",
   "main": "build/index.js",
   "types": "build/index.d.ts",
