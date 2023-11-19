@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { readFile } from 'fs/promises'
 import { globStream } from 'glob'
 import { hideBin } from 'yargs/helpers'

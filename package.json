@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "Search for \"REQUIRE\" in comments and report if no matching \"SATISFIED\" found",
   "main": "build/index.js",
+  "types": "build/index.d.ts",
   "bin": {
     "require-satisfied-check": "build/bin/check.js",
     "rs-check": "build/bin/check.js"
   },
+  "repository": "https://github.com/Luluno01/require-satisfied",
   "scripts": {
     "test": "node --test",
     "build": "tsc",
-    "install": "tsc",
+    "prepublish": "tsc",
     "check": "node build/bin/check.js"
   },
   "author": "Untitled",
