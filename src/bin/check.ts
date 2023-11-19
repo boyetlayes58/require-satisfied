@@ -160,6 +160,7 @@ async function main() {
     ? chalk.redBright(`${nErrs} error(s)`)
     : '0 errors'
   )
+  if (nErrs) process.exit(1)
 }
 
 main()
