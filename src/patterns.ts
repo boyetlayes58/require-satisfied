@@ -24,7 +24,7 @@ export const anyFormat: CommentMarks = {
   ]
 }
 
-export default {
+const patterns = {
   C: { ext: '.c', format: defaultFormat },
   'C++': { ext: [ '.cpp', '.cc' ], format: defaultFormat },
   'C/C++': { ext: [ '.c', '.cpp', '.cc' ], format: defaultFormat },
@@ -38,3 +38,10 @@ export default {
   Batch: { ext: '.bat', format: batchFormat },
   Any: { ext: '', format: anyFormat }
 }
+
+export default patterns
+
+export const extPatterns = new Map(Object
+  .values(patterns)
+  .map(({ ext, format }) => [ ext, format ])
+)
