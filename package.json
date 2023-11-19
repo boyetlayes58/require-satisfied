@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "Search for \"REQUIRE\" in comments and report if no matching \"SATISFIED\" found",
   "main": "build/index.js",
-  "bin": "build/bin/check.js",
+  "bin": {
+    "require-satisfied-check": "build/bin/check.js",
+    "rs-check": "build/bin/check.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "test": "node --test",
+    "build": "tsc",
+    "install": "tsc",
+    "check": "node build/bin/check.js"
   },
   "author": "Untitled",
   "license": "ISC",
