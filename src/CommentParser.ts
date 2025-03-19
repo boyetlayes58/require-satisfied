@@ -30,6 +30,7 @@ export interface Comment {
   endLine: number
   endCol: number
   comment: string[]
+  user?: string
 }
 
 export default class CommentParser {
